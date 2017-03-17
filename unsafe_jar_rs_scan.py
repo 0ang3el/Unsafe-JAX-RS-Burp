@@ -18,7 +18,7 @@ except ImportError:
     print "Failed to load dependencies. This issue maybe caused by using an unstable Jython version."
 
 VERSION = '0.1'
-DEBUG = True        # Turn on/off debug info in console
+DEBUG = False        # Turn on/off debug info in console
 callbacks = None
 helpers = None
 
