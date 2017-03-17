@@ -18,7 +18,7 @@ except ImportError:
     print "Failed to load dependencies. This issue maybe caused by using an unstable Jython version."
 
 VERSION = '0.1'
-DEBUG = False        # Turn on/off debug info in console
+DEBUG = True        # Turn on/off debug info in console
 callbacks = None
 helpers = None
 
@@ -66,6 +66,7 @@ def should_trigger_per_request_attacks(request_info, insertionPoint): ### Hack t
 
         return True
 
+    debug2console('Skiping insertion point', insertionPoint.getInsertionPointName())
     return False
 
 def get_random_string(len):
